@@ -3,52 +3,53 @@
   <head> <!-- styling, libraries, info used to render the body-->
     
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}">
-    <title>Cristy's Store </title>
-
+    <title>Welcome! </title>
+    <style>
+      h1 {
+        font-size: 
+      }
+    </style>
     <body> <!--#what you want to show on the page -->
-      <h1> Cristy's Store </h1>
+      
       <table>
       
           <tr>
           </tr>
             <td>
-              <button> Home </button>
+              <a href =" {{ url_for('hello_world') }} " ><button> Home </button></a>
             </td>
             <td>
-              <button> About Me </button>
+              <a href="{{ url_for('aboutme')}}"> <button> About Me </button> </a>
+            </td>
+            <td>
+              <a href="{{ url_for('portfolio')}}"> <button> Portfolio </button> </a>
             </td>
         <td>
-          <button> Shop </button>
+          <a href="{{url_for('shop')}}"><button> Shop </button></a>
+          <a href="{{url_for('contact')}}"><button> Contact Me </button></a>
+          
         </td>
-        <td>
-          <button> My Account </button>
-        </td>
-        <td>
-          <button> Cart </button>
-        </td>
+       
           </tr>
         
       </table>
 
       
-      <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/cristy-home.png" height="500">
-      <h2> About Cristy </h2>
-      <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Lectus lectus convallis placerat cras est; mollis interdum. Ex nulla maecenas cubilia habitant pretium ad. Aptent cursus vestibulum quis tristique cursus condimentum mollis vulputate. Semper scelerisque magna suscipit enim, vel ultrices eros. Nullam hendrerit sapien duis enim ornare magnis. Facilisi molestie torquent lacinia pharetra facilisis viverra. Urna dignissim suspendisse habitasse molestie sit interdum nibh. Donec tincidunt torquent turpis ante lectus torquent neque. Rutrum tincidunt laoreet, facilisis in molestie laoreet massa.
-      </p>
-
-      <a href="http://www.htmldog.com">HTML Dog</a>
+      <a href="{{('aboutme')}}"><img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/Logo.png" alt="Cristina" style="width:100%"></a>
+     
+      
       
       <h2> Kitties </h2>
       <table>
         <!--#first row-->
           <tr>
               <td>
-                <a href = " http://www.htmldog.com">
+                <a href= "http://www.htmldog.com">
                   <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/cats-laying.jpg" width="120" height="120" alt="Cats sun bathing">
                 </a>
               </td>
               <td>
-                <a href="https://replit.com/@cristinahh/cristy-webapp#templates/cats-laying-page.html">
+                <a href="{{ url_for('laying')}}">
                   <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/indicat.jpg" width="120" height="120" alt="Indicat">
                   </a>
               </td>
@@ -56,47 +57,29 @@
                  <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/cat.jpg" width="120" height="120" alt="Cat stretching">
               </td>
             <td>
-              <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/cat1.jpg" width="120" height="120" alt="Cat stretching">
+              <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/cat1.jpg" width="120" height="120" alt="Cat and lights">
             </td>
           </tr>
 
          <!--#second row-->
           <tr>
               <td>
-                <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/cat2.jpg" width="120" height="120" alt="Cat stretching">
+                <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/cat4.jpg" width="120" height="120" alt="Cat outside">
               </td>
               <td>
-                <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/cat3.jpg" width="120" height="120" alt="Cat stretching">
-              </td>
-          </tr>
-
-         <!--#third row-->
-          <tr>
-              <td>
-                <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/cat4.jpg" width="120" height="120" alt="Cat stretching">
+                <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/cat5.jpg" width="120" height="120" alt="Just a cat">
               </td>
               <td>
-                <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/cat5.jpg" width="120" height="120" alt="Cat stretching">
-              </td>
-              <td>
-                <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/cat6.jpg" width="120" height="120" alt="Cat stretching">
+                <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/cat6.jpg" width="120" height="120" alt="Cat on grass">
               </td>
             <td>
-              <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/cat7.jpg" width="120" height="120" alt="Cat stretching">
+              <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/cat7.jpg" width="120" height="120" alt="Cat laying on carpet">
             </td>
           </tr>
 
-         <!--#fourth row-->
-          <tr>
-              <td>
-                <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/cat8.jpg" width="120" height="120" alt="Cat stretching">
-              </td>
-              <td>
-                <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/cat9.jpg" width="120" height="120" alt="Cat stretching">
-              </td>
-          </tr>
+        
       </table>
-<button> Click Here! </button>
+
       
   </body>
   </head>
