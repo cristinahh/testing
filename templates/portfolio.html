@@ -1,31 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title> Portfolio </title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}">
     
+    <title> Portfolio </title>
+    <main> <h1>My Portfolio</h1></main>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}" type="text/css">
+    
+    <div class="topnav">
+      <a href="{{ url_for('hello_world') }} ">Home</a>
+      <a href="{{ url_for('aboutme')}}">About Me</a>
+      <a class="active" href="{{ url_for('portfolio')}}">Portfolio</a>
+      <a href="{{url_for('shop')}}">Shop</a>
+      <a href="{{url_for('contact')}}">Contact Me</a>
+    </div>
+    </head>
     <body>
-      
-      <a href=" {{ url_for('hello_world') }} " ><button> Home </button></a>
-      
-      <h1>
-        Welcome to my portfolio!
-      </h1>
 
-      <p>
+      
+      <h2>
+        LinkedIn QR Code
+      </h2>
+      
+      <img id= "qr-photo" src="{{ url_for('static', filename='QRtoLinkedIn.png') }}">
+      
+      <p id="firstp">
         I have 10+ years of experience in the workforce mainly in Customer Service. I have worked with a variety of companies, before I continued my education at California State University, Fullerton. I started as a cashier and steadily grew my skills as I transitioned into Administration. Today, I work for a small company handling all of their billing and scheduling, proving my exceptional attention to detail. </p>
       <p> My time at CSUF has been nothing but amazing and I have learned so many new skills and interacted with a variety of students and professors. I have worked on projects on my own as well as in teams where I have taken the role of both a supporting member as well as a leader in the group. I am most proud of my work as a leader in my cyber security class, where I have been able to keep the entire team on task as well as provide support on areas as needed. </p>
       <p> I am looking for a role as a Computer Science Intern where I can leverage all the skills I have aquired from my past experiences in order to succeed and continure to grow within a company. I would love to work for a company that shares the same values as I do, which is, good work is done with <em>focus</em>, great work is done with <strong>grit </strong>.        
       </p>
 
-      <a href="https://www.linkedin.com/in/cristina-hernandez-06a0971b8/"><button> LinkedIn </button></a>
+      <a class="p-buttons" href="https://www.linkedin.com/in/cristina-hernandez-06a0971b8/" > LinkedIn </a>
 
-      <a href="{{ url_for('resume')}}"><button> Resume </button></a>
+      <a class="p-buttons" href="{{ url_for('resume')}}"> Resume </a>
 
-       <a href="https://github.com/cristinahh"><button> Github </button></a>
+       <a class="p-buttons" href="https://github.com/cristinahh"> Github </a>
       
     </body>
     
-  </head>
+
   
 </html>
   

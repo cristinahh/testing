@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html>
-<body>
-<a href="{{url_for('hello_world')}}"><button>Home</button></a>
-<h1>Contact Me! </h1>
+  <head>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}">
+  </head>
+
+<main><h1>Contact Me </h1></main>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}" type="text/css">
+    <div class="topnav">
+      <a href="{{ url_for('hello_world') }} ">Home</a>
+      <a href="{{ url_for('aboutme')}}">About Me</a>
+      <a href="{{ url_for('portfolio')}}">Portfolio</a>
+      <a href="{{url_for('shop')}}">Shop</a>
+      <a class="active" href="{{url_for('contact')}}">Contact Me</a>
+    </div>
+  <body>
 <p>If you have any questions or want to reach out, please feel free to shoot me a message!</p>
   <textarea rows="20%" cols= "80%"> Message Me </textarea>
 <br>

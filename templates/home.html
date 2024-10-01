@@ -3,85 +3,27 @@
   <head> <!-- styling, libraries, info used to render the body-->
     
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/homestyle.css') }}" type="text/css">
+
     <title>Welcome! </title>
-    <style>
-      h1 {
-        font-size: 
-      }
-    </style>
-    <body> <!--#what you want to show on the page -->
+  </head>
+  
+<!--#what you want to show on the page -->
+
+    <h1> Cristina Hernandez</h1>
       
-      <table>
-      
-          <tr>
-          </tr>
-            <td>
-              <a href =" {{ url_for('hello_world') }} " ><button> Home </button></a>
-            </td>
-            <td>
-              <a href="{{ url_for('aboutme')}}"> <button> About Me </button> </a>
-            </td>
-            <td>
-              <a href="{{ url_for('portfolio')}}"> <button> Portfolio </button> </a>
-            </td>
-        <td>
-          <a href="{{url_for('shop')}}"><button> Shop </button></a>
-          <a href="{{url_for('contact')}}"><button> Contact Me </button></a>
-          
-        </td>
-       
-          </tr>
-        
-      </table>
+    <div class="topnav">
+      <a class="active" href="{{ url_for('hello_world') }}" >Home</a>
+      <a href="{{ url_for('aboutme')}}">About Me</a>
+      <a href="{{ url_for('portfolio')}}">Portfolio</a>
+      <a href="{{url_for('shop')}}">Shop</a>
+      <a href="{{url_for('contact')}}">Contact Me</a>
+    </div>
 
       
-      <a href="{{('aboutme')}}"><img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/Logo.png" alt="Cristina" style="width:100%"></a>
-     
-      
-      
-      <h2> Kitties </h2>
-      <table>
-        <!--#first row-->
-          <tr>
-              <td>
-                <a href= "http://www.htmldog.com">
-                  <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/cats-laying.jpg" width="120" height="120" alt="Cats sun bathing">
-                </a>
-              </td>
-              <td>
-                <a href="{{ url_for('laying')}}">
-                  <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/indicat.jpg" width="120" height="120" alt="Indicat">
-                  </a>
-              </td>
-              <td>
-                 <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/cat.jpg" width="120" height="120" alt="Cat stretching">
-              </td>
-            <td>
-              <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/cat1.jpg" width="120" height="120" alt="Cat and lights">
-            </td>
-          </tr>
-
-         <!--#second row-->
-          <tr>
-              <td>
-                <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/cat4.jpg" width="120" height="120" alt="Cat outside">
-              </td>
-              <td>
-                <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/cat5.jpg" width="120" height="120" alt="Just a cat">
-              </td>
-              <td>
-                <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/cat6.jpg" width="120" height="120" alt="Cat on grass">
-              </td>
-            <td>
-              <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/cat7.jpg" width="120" height="120" alt="Cat laying on carpet">
-            </td>
-          </tr>
-
-        
-      </table>
-
+      <a href="{{('aboutme')}}"><img id="banner" src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/Cristina.png" alt="Cristina" ></a>
       
   </body>
-  </head>
+ 
 
 </html>

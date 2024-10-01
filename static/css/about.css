@@ -1,0 +1,87 @@
+body {
+  background-image: linear-gradient(rgba(57,9,112,1), rgba(108,105,194,0.5));
+  font-family: Garamond, serif;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: normal;
+  color: rgba(100,100,200, 1);
+  text-align: center;
+
+}
+
+h2 {
+  font-size: 200%;
+  font-weight: normal;
+  color: white;
+  text-align: left;
+  margin-left: 10%;
+  
+}
+
+p {
+  text-align: left;
+  margin-right: 10%;
+  
+}
+#firstp {
+  margin-top: 5%;
+}
+.topnav {
+  background-color: #522882;
+  overflow: hidden;
+}
+
+.topnav a{
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #8365a6;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #8365a6;
+  color: white;
+}
+
+/*the . means this is a class and can be applied to any element with this name*/
+.centered-photo {
+  display: block;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 50%;
+  float: left;
+}
+
+#qr-photo {
+  display: block;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 30%;
+  float: left;
+}
+
+.p-buttons {
+  background-color: #6932a8;
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+  border-radius: 10px;
+  font-family: serif; 
+  text-decoration: none;
+  color: white;
+  padding: 15px 32px;
+  display: inline-block;
+  
+}

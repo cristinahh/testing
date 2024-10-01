@@ -1,0 +1,50 @@
+body {
+  background-image: linear-gradient(rgba(203,130,196,1), rgba(242,224,240,0.5));
+  font-family: serif;
+  
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #d7aff2;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #efdffa;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #bf7feb;
+  color: white;
+}
+
+#cart {
+  float: right;
+  border: none;
+  margin-right: 50px;
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+  border-radius: 10px;
+}
+

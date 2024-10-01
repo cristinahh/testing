@@ -1,35 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<title>Page Title</title>
+<title>Cristy's Shop</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
-<style >
-</style>
-<script src=""></script>
-<body>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/shophome.css') }}" type="text/css">
 
-  <tr>
-    <td>
-    <a href =" {{ url_for('hello_world') }} " ><button> Home </button></a>
-    </td>
-    <td>
-      <a href="{{url_for('myaccount')}}"><button> My Account </button></a>
-    </td>
-    <td>
-      <button> Cart </button>
-    </td>
-      </tr>
+  <head>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon-shop.ico') }}">
+    
+     
+  </head>
+<body>
+  
   
   <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/shop.png" alt="Cristina Hero Image" style="width:100%">
+
+  <div class="topnav">
+    <a class="active" href="{{ url_for('hello_world') }} ">Home</a>
+    <a href="{{ url_for('myaccount')}}">My Account</a>
+    <a id="cart" href="#cart">Cart</a>
+    <input type="text" placeholder="Search..">
+  </div>
   
-  
-  
-<div class="">
- <h1 style=" color:magenta; ">This is a Heading</h1>
- <p>This is a paragraph.</p>
- <p>This is another paragraph.</p>
-</div>
+  <h1>This is a Heading</h1>
+  <p>This is a paragraph.</p>
+  <p>This is another paragraph.</p>
+
+  <h2> Kitties </h2>
+
+          <a href= "http://www.htmldog.com">
+            <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/cats-laying.jpg" width=13% height="120" alt="Cats sun bathing">
+          </a>
+
+          <a href="{{ url_for('laying')}}">
+            <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/indicat.jpg" width=12% height="120" alt="Indicat">
+            </a>
+
+           <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/cat.jpg" width=12% height="120" alt="Cat stretching">
+
+        <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/cat1.jpg" width=12% height="120" alt="Cat and lights">
+
+
+   <!--#second row-->
+
+          <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/cat4.jpg" width=12% height="120" alt="Cat outside">
+
+          <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/cat5.jpg" width=12% height="120" alt="Just a cat">
+
+          <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/cat6.jpg" width=12% height="120" alt="Cat on grass">
+
+        <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/cat7.jpg" width=12% height="120" alt="Cat laying on carpet">
+
+
+
 
 </body>
 </html>
