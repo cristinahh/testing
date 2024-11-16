@@ -7,13 +7,6 @@ app = Flask(__name__)
 def hello_world():
   return render_template('home.html')
 
-
-@app.route(
-    '/laying')  #when this path is accessed, show whatever is after return
-def laying():
-  return render_template('laying.html')
-
-
 @app.route(
     '/aboutme')  #when this path is accessed, show whatever is after return
 def aboutme():
@@ -25,27 +18,17 @@ def aboutme():
 def portfolio():
   return render_template('portfolio.html')
 
+
 @app.route(
-  '/resume')  #when this path is accessed, show whatever is after return
+    '/resume')  #when this path is accessed, show whatever is after return
 def resume():
   return render_template('resume.html')
 
 
 @app.route(
-  '/shop')  #when this path is accessed, show whatever is after return
-def shop():
-  return render_template('shop.html')
-
-@app.route(
-  '/myaccount')  #when this path is accessed, show whatever is after return
-def myaccount():
-  return render_template('myaccount.html')
-  
-@app.route(
-  '/contact')  #when this path is accessed, show whatever is after return
+    '/contact')  #when this path is accessed, show whatever is after return
 def contact():
   return render_template('contact.html')
-
 
 
 print(__name__)

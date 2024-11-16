@@ -1,13 +1,16 @@
 body {
-  background-image: linear-gradient(rgba(203,130,196,1), rgba(242,224,240,0.5));
+  background-image: linear-gradient(to right bottom, #3533cd, #0038ad, #003689, #002f62, #14263c);
   font-family: serif;
+  padding-left: 10%;
+  padding-right: 10%;
   
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #d7aff2;
+  background-color: #222267;
   overflow: hidden;
+ 
 }
 
 /* Style the links inside the navigation bar */
@@ -22,19 +25,26 @@ body {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #efdffa;
+  background-color: #424894;
   color: black;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #bf7feb;
+  background-color: #424894;
   color: white;
 }
 
 #home {
   float: left;
   border: none;
+  
+}
+
+#shop-text {
+  font-size: 150%;
+  color: red;
+  text-shadow: 2px 2px 1px black;
   
 }
 
@@ -48,3 +58,22 @@ body {
   border-radius: 10px;
 }
 
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+
+.col-2 {
+  flex-basis: 50%;
+  min-width: 300px;
+  
+}
+
+.col-2 img {
+  min-width: 100%;
+  padding-width: 50px 0;
+
+}

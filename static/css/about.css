@@ -72,6 +72,16 @@ p {
   width: 30%;
   float: left;
 }
+.pdf {
+  display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 50%;
+    float: left;
+  }
+}
 
 .p-buttons {
   background-color: #6932a8;
@@ -86,3 +96,93 @@ p {
   display: inline-block;
   
 }
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.contact-container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+.contact-left{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+
+}
+
+.contact-left-title h2{
+  font-weight: 600;
+  font-size: 40px
+  margin-bottom: 5px;   
+
+}
+
+.contact-left-title hr{
+  border: none;
+  width: 120px;
+  height: 5px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+
+}
+
+.contact-input{
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: darkblue;
+  border-radius: 50px;
+}
+.contact-left textarea{
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+  
+}
+.contact-input:focus{
+  border: 2px solid #242784;
+}
+.contact-input:placeholder{
+  color: lightgray;
+}
+.contact-left button{
+  display:flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: black;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(270deg, #97f2df, #bfb8f4);
+  cursor: pointer;
+  
+}
+.contact-left button img{
+  height: 20px;
+  width: 20px;
+}
+.contact-right img{
+  width: 500px;
+}
+@media (max-width:800px) {
+  .contact-input{
+    width: 80vw;
+  }
+  .contact-right{
+    display: none;
+  }
+}
+
