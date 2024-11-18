@@ -1,18 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <title>About Me</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/about.css') }}"
+      type="text/css"
+    />
 
-<meta charset="UTF-8">
-<title>About Me</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}" type="text/css">
-<style>
-</style>
-<script src=""></script>
-  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}">
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='favicon.png') }}"
+    />
 
-    <main> <h1>About Me</h1></main>
-    
+    <main><h1>About Me</h1></main>
+
     <div class="topnav">
       <a href="{{ url_for('hello_world') }} ">Home</a>
       <a class="active" href="{{ url_for('aboutme')}}">About Me</a>
@@ -20,20 +24,55 @@
       <a href="{{ url_for('resume')}}"> Resume</a>
       <a href="{{url_for('contact')}}">Contact Me</a>
     </div>
-</head>
-<body>
+  </head>
 
-  <img src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/catalina.jpg" class="centered-photo" alt="Cristina" style="width:30%">
-  <p id="firstp">
-    Hello, my name is Cristina Hernandez. I am 33 years old and I am a creative and free soul. Growing up I was the kid with cuts on her legs from all the crazy running and climbing around. I loved watching my father build things around the house and I would always grab a few sticks, some mud, and pretended I was helping. It was amazing to see the process of his project from start to finish, to this day I always have a curiousity of how things are made.  </p>
-  <p> I have a passion for art and crafts. I love to doodle and create things from sewing little knick knacks, to stenciling images, and creating and printing t-shirt designs. I grew up listening to and appreciating music as well. I grew up listening to bands from Metallica to Blink 182 and The Doors. Sometimes, on my free time, I like to play my guitar, drums or sing. </p>
-  <p> When I'm not playing the guitar, I'm on the field. I grew up playing soccer in the streets of Mexico with my cousins and friends. I've always been in love with sports and never stopped. Today, I still play both soccer and softball recreationally. I love the competitiveness in sports and the community you can find within the fans. I am a huge fan of the Los Angeles Dodgers and Angel City FC. 
-  </p>
-  <p>
-    I have a cat named Indigo. He is so handsome and I love him so much. He is 8 years old and such a good boy. My favorite thing about him is his chill energy. They say that pets take on their owners characteristics, so I guess you can say the same about me. When I'm relaxing on the couch, he loves to come sit and watch tv with me. He is loving in his own way but my goodness does he shed a thousand coats a day! 
-  </p>
-
-</div>
-
-</body>
+  <body>
+    <img
+      src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/catalina.jpg"
+      class="centered-photo"
+      alt="Cristina"
+      style="width: 30%"
+    />
+    <img
+      src="https://d294df8b-f88b-42eb-912c-60fea18e914a-00-1o8y0m0uzsuvk.worf.replit.dev/static/indicat.jpg"
+      class="centered-photo"
+      alt="Cristina"
+      style="width: 30%"
+    />
+    <div >
+      <p>
+        Hello, my name is Cristina Hernandez. I am 33 years old and I am a
+        creative and free soul. Growing up I was the kid with cuts on her legs
+        from all the crazy running and climbing around. I loved watching my
+        father build things around the house and I would always grab a few
+        sticks, some mud, and pretended I was helping. It was amazing to see the
+        process of his project from start to finish, to this day I always have a
+        curiousity of how things are made.
+      </p>
+      <p>
+        I have a passion for art and crafts. I love to doodle and create things
+        from sewing little knick knacks, to stenciling images, and creating and
+        printing t-shirt designs. I grew up listening to and appreciating music
+        as well. I grew up listening to bands from Metallica to Blink 182 and
+        The Doors. Sometimes, on my free time, I like to play my guitar, drums
+        or sing.
+      </p>
+      <p>
+        When I'm not playing the guitar, I'm on the field. I grew up playing
+        soccer in the streets of Mexico with my cousins and friends. I've always
+        been in love with sports and never stopped. Today, I still play both
+        soccer and softball recreationally. I love the competitiveness in sports
+        and the community you can find within the fans. I am a huge fan of the
+        Los Angeles Dodgers and Angel City FC.
+      </p>
+      <p id="lastp">
+        I have a cat named Indigo. He is so handsome and I love him so much. He
+        is 8 years old and such a good boy. My favorite thing about him is his
+        chill energy. They say that pets take on their owners characteristics,
+        so I guess you can say the same about me. When I'm relaxing on the
+        couch, he loves to come sit and watch tv with me. He is loving in his
+        own way but my goodness does he shed a thousand coats a day!
+      </p>
+    </div>
+  </body>
 </html>

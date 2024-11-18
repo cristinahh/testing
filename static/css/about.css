@@ -10,6 +10,12 @@ h1 {
   text-align: center;
 
 }
+#banner {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+
+}
 
 h2 {
   font-size: 200%;
@@ -21,10 +27,16 @@ h2 {
 }
 
 p {
+  text-indent: 50px;
   text-align: left;
   margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 1%;
   color: white;
   font-size: 20px;  
+}
+#lastp{
+  margin-bottom: 10%;
 }
 #firstp {
   margin-top: 5%;
@@ -80,10 +92,11 @@ p {
     margin-bottom: 5%;
     width: 50%;
     float: left;
+    
   }
 }
 
-.p-buttons {
+#p-buttons {
   background-color: #6932a8;
   border-style: solid;
   border-width: medium;
@@ -94,6 +107,7 @@ p {
   color: white;
   padding: 15px 32px;
   display: inline-block;
+  padding-right: 10px;
   
 }
 
