@@ -47,6 +47,6 @@ print(
 )  # This should print the value of the access key if it's loaded correctly.
 print(__name__)
 if __name__ == "__main__":
-  app.run(host='0.0.0.0', debug=True)  #starts the app on hose 0.0.0.0
+  app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 5000)), debug=False)
 
 #deleted comment
