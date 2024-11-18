@@ -9,6 +9,7 @@ packages = [{include = "repl_nix_cristy_webapp"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 flask = "^3.0.3"
+python-dotenv = "^1.0.1"
 
 
 [build-system]
