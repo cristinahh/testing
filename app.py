@@ -7,14 +7,10 @@ load_dotenv()
 app = Flask(__name__)
 web3forms_access_key = os.getenv('WEB3FORMS_ACCESS_KEY')
 
-imgFolder = os.path.join('static', 'images')
-app.config['UPLOAD_FOLDER'] = imgFolder
-
 
 @app.route('/')  #when this path is accessed, show whatever is after return
 def hello_world():
-  pic_home = os.path.join(app.config['UPLOAD_FOLDER'], 'Cristina.png')
-  return render_template('home.html', user_image = pic_home)
+  return render_template('home.html')
 
 
 @app.route(
