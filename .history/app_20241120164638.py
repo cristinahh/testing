@@ -36,7 +36,6 @@ def resume():
 
 @app.route('/contact')
 def contact():
-  print(web3forms_access_key)  # Should print the correct UUID
   return render_template('contact.html',
                          web3forms_access_key=web3forms_access_key)
 
