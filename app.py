@@ -1,46 +1,44 @@
-from flask import Flask, render_template, send_from_directory
+from flask import Flask, render_template
 from dotenv import load_dotenv
 import os
 
+# Load environment variables
 load_dotenv()
 
+# Initialize Flask app
 app = Flask(__name__)
-web3forms_access_key = os.getenv('WEB3FORMS_ACCESS_KEY')
+
+# Get Web3Forms API Key
+web3forms_access_key = os.getenv('WEB3FORMS_ACCESS_KEY', 'default_dummy_key')
+if web3forms_access_key == 'default_dummy_key':
+  print("Warning: WEB3FORMS_ACCESS_KEY is not set!")
 
 
-@app.route('/')  #when this path is accessed, show whatever is after return
+@app.route('/')
 def hello_world():
   return render_template('home.html')
 
 
-@app.route(
-    '/aboutme')  #when this path is accessed, show whatever is after return
+@app.route('/aboutme')
 def aboutme():
   return render_template('aboutme.html')
 
 
-@app.route(
-    '/portfolio')  #when this path is accessed, show whatever is after return
+@app.route('/portfolio')
 def portfolio():
   return render_template('portfolio.html')
 
 
-@app.route(
-    '/resume')  #when this path is accessed, show whatever is after return
+@app.route('/resume')
 def resume():
   return render_template('resume.html')
 
 
-@app.route(
-    '/contact')  #when this path is accessed, show whatever is after return
+@app.route('/contact')
 def contact():
-  return render_template('contact.html')
+  return render_template('contact.html',
+                         web3forms_access_key=web3forms_access_key)
 
-  # This should print the value of the access key if it's loaded correctly.
 
-
-print(__name__)
 if __name__ == "__main__":
-  app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 5000)), debug=False)
-
-#deleted comment
+  app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 5000)), debug=True)
