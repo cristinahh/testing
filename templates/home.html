@@ -2,10 +2,7 @@
 <html>
   <head>
     <!-- styling, libraries, info used to render the body-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
-      rel="stylesheet"
-    />
+
     <link
       rel="shortcut icon"
       href="{{ url_for('static', filename='favicon.png') }}"
@@ -16,19 +13,12 @@
       type="text/css"
     />
 
-    <style>
-      body {
-        font-family: "Poppins";
-        font-size: 22px;
-      }
-    </style>
     <title>Welcome!</title>
   </head>
 
   <!--#what you want to show on the page -->
 
   <h1>Cristina Hernandez</h1>
-
   <div class="topnav">
     <a class="active" href="{{ url_for('hello_world') }}">Home</a>
     <a href="{{ url_for('aboutme')}}">About Me</a>
