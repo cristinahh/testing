@@ -15,7 +15,12 @@
       href="{{ url_for('static', filename='favicon.png') }}"
     />
 
-    <main><h1>About Me</h1></main>
+    <img
+      src="{{url_for('static', filename='images/gradyr.png')}}"
+      id="logo"
+      alt="logo"
+    />
+    <main>
 
     <div class="topnav">
       <a href="{{ url_for('hello_world') }} ">Home</a>
@@ -27,6 +32,7 @@
   </head>
 
   <body>
+    <h1>About Me</h1>
     <img
       src="{{url_for('static', filename='images/catalina.jpg')}}"
       class="centered-photo"
@@ -75,4 +81,5 @@
       </p>
     </div>
   </body>
+  </main>
 </html>

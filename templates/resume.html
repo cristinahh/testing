@@ -11,8 +11,12 @@
       href="{{ url_for('static', filename='css/about.css') }}"
       type="text/css"
     />
-
-    <h1>My Resume</h1>
+    <img
+      src="{{url_for('static', filename='images/gradyr.png')}}"
+      id="logo"
+      alt="logo"
+    />
+    
     <div class="topnav">
       <a href="{{ url_for('hello_world') }} ">Home</a>
       <a href="{{ url_for('aboutme')}}">About Me</a>
@@ -23,6 +27,7 @@
     </div>
   </head>
   <body>
+    <h1> Resume </h1>
     <embed
       class="pdf"
       src="{{url_for('static', filename='images/1024CrisRes.pdf')}}"
