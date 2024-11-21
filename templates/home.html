@@ -1,9 +1,7 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
     <title>Welcome!</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link
       rel="shortcut icon"
       href="{{ url_for('static', filename='favicon.png') }}"
@@ -19,16 +17,15 @@
       href="{{ url_for('static', filename='css/about.css') }}"
       type="text/css"
     />
+
+    <div class="topnav">
+      <a class="active" href="{{ url_for('hello_world') }}">Home</a>
+      <a href="{{ url_for('aboutme')}}">About Me</a>
+      <a href="{{ url_for('portfolio')}}">Portfolio</a>
+      <a href="{{ url_for('resume')}}"> Resume</a>
+      <a href="{{url_for('contact')}}">Contact Me</a>
+    </div>
   </head>
-
-  <div class="topnav">
-    <a class="active" href="{{ url_for('hello_world') }}">Home</a>
-    <a href="{{ url_for('aboutme')}}">About Me</a>
-    <a href="{{ url_for('portfolio')}}">Portfolio</a>
-    <a href="{{ url_for('resume')}}"> Resume</a>
-    <a href="{{url_for('contact')}}">Contact Me</a>
-  </div>
-
   <body>
     <img
       src="{{url_for('static', filename='images/crishome.jpg')}}"

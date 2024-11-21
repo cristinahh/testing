@@ -1,9 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
     <title>About Me</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
     <link
       rel="shortcut icon"
@@ -15,13 +13,13 @@
       id="logo"
       alt="logo"
     />
-    <main>
+
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/about.css') }}"
       type="text/css"
     />
-    
+
     <div class="topnav">
       <a href="{{ url_for('hello_world') }} ">Home</a>
       <a class="active" href="{{ url_for('aboutme')}}">About Me</a>
@@ -29,8 +27,7 @@
       <a href="{{ url_for('resume')}}"> Resume</a>
       <a href="{{url_for('contact')}}">Contact Me</a>
     </div>
-
-</head>
+  </head>
   <body>
     <h1>About Me</h1>
     <img
@@ -81,5 +78,4 @@
       </p>
     </div>
   </body>
-  </main>
 </html>

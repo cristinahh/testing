@@ -6,77 +6,77 @@
       rel="shortcut icon"
       href="{{ url_for('static', filename='favicon.png') }}"
     />
+
+    <img
+      src="{{url_for('static', filename='images/gradyr.png')}}"
+      id="logo"
+      alt="logo"
+    />
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/about.css') }}"
       type="text/css"
     />
   </head>
+
+  <div class="topnav">
+    <a href="{{ url_for('hello_world') }} ">Home</a>
+    <a href="{{ url_for('aboutme')}}">About Me</a>
+    <a href="{{ url_for('portfolio')}}">Portfolio</a>
+    <a href="{{ url_for('resume')}}"> Resume</a>
+    <a class="active" href="{{url_for('contact')}}">Contact Me</a>
+  </div>
   <body>
-    <img
-      src="{{url_for('static', filename='images/gradyr.png')}}"
-      id="logo"
-      alt="logo"
-    />
-    <main>
-      <div class="topnav">
-        <a href="{{ url_for('hello_world') }} ">Home</a>
-        <a href="{{ url_for('aboutme')}}">About Me</a>
-        <a href="{{ url_for('portfolio')}}">Portfolio</a>
-        <a href="{{ url_for('resume')}}"> Resume</a>
-        <a class="active" href="{{url_for('contact')}}">Contact Me</a>
-      </div>
-      <h1>Contact Me</h1>
-      <div class="contact-container">
-        <form
-          action="https://api.web3forms.com/submit"
-          method="POST"
-          class="contact-left"
-        >
-          <div class="contact-left-title">
-            <h2>Get in touch</h2>
-            <hr />
-          </div>
-          <input
-            type="hidden"
-            name="access_key"
-            value="{{web3forms_access_key}}"
-          />
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            class="contact-input"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            class="contact-input"
-            required
-          />
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            class="contact-input"
-            required
-          ></textarea>
-          <button type="submit">
-            Submit<img
-              src="{{url_for('static', filename='images/next-button.png')}}"
-              width="30px"
-              alt="Next Button"
-            />
-          </button>
-        </form>
-        <div class="contact-right">
-          <img
-            src="{{url_for('static', filename='images/paperplane.png')}}"
-            alt="paper plane"
-          />
+    <h1>Contact Me</h1>
+    <div class="contact-container">
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="contact-left"
+      >
+        <div class="contact-left-title">
+          <h2>Get in touch</h2>
+          <hr />
         </div>
+        <input
+          type="hidden"
+          name="access_key"
+          value="{{web3forms_access_key}}"
+        />
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          class="contact-input"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          class="contact-input"
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          class="contact-input"
+          required
+        ></textarea>
+        <button type="submit">
+          Submit<img
+            src="{{url_for('static', filename='images/next-button.png')}}"
+            width="30px"
+            alt="Next Button"
+          />
+        </button>
+      </form>
+      <div class="contact-right">
+        <img
+          src="{{url_for('static', filename='images/paperplane.png')}}"
+          alt="paper plane"
+        />
       </div>
-    </main>
+    </div>
   </body>
 </html>
