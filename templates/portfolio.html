@@ -1,21 +1,19 @@
 <!doctype html>
 <html lang="en">
   <head>
-     <meta charset="UTF-8" />
     <title>Experience</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    
+
     <link
       rel="shortcut icon"
       href="{{ url_for('static', filename='favicon.png') }}"
     />
- 
+
     <img
       src="{{url_for('static', filename='images/gradyr.png')}}"
       id="logo"
       alt="logo"
     />
-    <main>
+
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/about.css') }}"
@@ -31,7 +29,7 @@
     </div>
   </head>
   <body>
-    <h1> My Experience</h1>
+    <h1>My Experience</h1>
 
     <img
       id="qr-photo"
@@ -60,18 +58,15 @@
       all the skills I have aquired from my past experiences in order to succeed
       and continure to grow within a company. I would love to work for a company
       that shares the same values as I do, which is, good work is done with
-      <em>focus</em>, great work is done with <strong>grit </strong>.
+      <em>focus</em>, great work is done with <strong>grit</strong>.
     </p>
 
-    <div id="p-buttons">
-      <a href="https://www.linkedin.com/in/cristina-hernandez-06a0971b8/">
-        LinkedIn
-      </a>
-
-      <a href="{{ url_for('resume')}}"> Resume </a>
-
-      <a href="https://github.com/cristinahh"> Github </a>
+    <div class="p-buttons">
+      <a href="https://www.linkedin.com/in/cristinahh/" target="_blank"
+        >LinkedIn</a
+      >
+      <a href="{{ url_for('resume')}}" target="_blank">Resume</a>
+      <a href="https://github.com/cristinahh" target="_blank">GitHub</a>
     </div>
   </body>
-  </main>
 </html>

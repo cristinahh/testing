@@ -16,7 +16,7 @@
       id="logo"
       alt="logo"
     />
-    
+
     <div class="topnav">
       <a href="{{ url_for('hello_world') }} ">Home</a>
       <a href="{{ url_for('aboutme')}}">About Me</a>
@@ -27,12 +27,13 @@
     </div>
   </head>
   <body>
-    <h1> Resume </h1>
-    <embed
-      class="pdf"
-      src="{{url_for('static', filename='images/1024CrisRes.pdf')}}"
-      width="800"
-      height="700"
-    />
+    <h1>Resume</h1>
+    <div class="pdf-container">
+      <embed
+        class="pdf"
+        src="{{url_for('static', filename='images/1024CrisRes.pdf')}}"
+        type="application/pdf"
+      />
+    </div>
   </body>
 </html>
